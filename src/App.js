@@ -1,12 +1,13 @@
 import React from 'react'
 import Header from './Components/Header/Header'
-
+import CarouselEffect from "./Components/Carousel/CarouselEffect";
 const App = () => {
   return (
     <div>
-      <Header/>
+      <Header />
+      <CarouselEffect />
     </div>
-  )
+  );
 }
 
 export default App
