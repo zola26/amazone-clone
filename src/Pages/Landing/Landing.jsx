@@ -1,10 +1,10 @@
 import React from 'react'
 import LayOut from '../../Components/LayOut/LayOut';
-import CarouselEffect from '../../Components/Carousel/CarouselEffect'
+import CarouselEffect from '../../Components/CarouselEffect/Carousel'
 import Category from '../../Components/Category/Category';
 
 
-const Landing = () => {
+function Landing(){
   return (
     <LayOut>
       <CarouselEffect />
