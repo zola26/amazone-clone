@@ -1,6 +1,6 @@
 import React from 'react'
 import classes from './signup.module.css'
-const Signup = () => {
+function Signup () {
   return (
     <div>
       SignUp

@@ -1,3 +1,8 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
 .header_container {
 background-color: #1a1a1a;
 display: flex;
@@ -15,7 +20,7 @@ max-width: 250px;
 }
 
 .logo_container img{
-width: 70%;
+width: 80%;
 padding-top: 5px;
 margin-left: 20px;
 vertical-align: middle;
@@ -25,7 +30,7 @@ vertical-align: middle;
     justify-content: center;
     align-items: center;
     gap: 3px;
-    font-weight: bold;
+    font-weight: bold; 
     padding: 5px;
 }
 .delivery p{
@@ -101,10 +106,10 @@ width: 40%;
 .cart span{
     position: absolute;
     font-weight: bold;
-    top: 0px;
+    top: -6px;
     font-size: 20px;
     background-color: #1a1a1a;
-    left: 16px;
+    left: 14px;
     color: orange;
 }
 .order_container a:hover,
@@ -124,9 +129,9 @@ display: flex;
 list-style: none;
 gap: 5px;
 }
-.lower_container ul{
+/* .lower_container ul{
     margin: 0px;
-}
+} */
 .lower_container ul li {
 padding: 8px;
 }
