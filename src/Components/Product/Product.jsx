@@ -26,11 +26,14 @@ return (
       <section className={classes.products_container}>
         {
         products?.map((singleProduct) => {
-          return <ProductCard 
-          product={singleProduct} 
-          key={singleProduct.id}
-          ratingcorr={true}
-           />;
+          return (
+            <ProductCard
+              product={singleProduct}
+              key={singleProduct.id}
+              ratingcorr={true}
+              renderAdd={true}
+            />
+          );
         })
         }
       </section>

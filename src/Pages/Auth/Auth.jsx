@@ -1,6 +1,6 @@
 import React from 'react'
 import classes from './signup.module.css'
-function Signup () {
+function Auth () {
   return (
     <div>
       SignUp
@@ -8,4 +8,4 @@ function Signup () {
   )
 }
 
-export default Signup
+export default Auth

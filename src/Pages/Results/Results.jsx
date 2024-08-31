@@ -23,21 +23,22 @@ function Results() {
   
   return (
     <LayOut>
-  <section>
-    <h1 style={{ padding:"30px"}}>Results</h1>
-    <p style={{padding:"30px"}}>Category/{categoryName}</p>
-    <hr/>
-    <div className={classes.products_container}>
-      {results?.map((product) => (
-      <ProductCard
-      key={product.id}
-      product={product}
-      />
-      ))}
-    </div>
-  </section>
+      <section>
+        <h1 style={{ padding: "30px" }}>Results</h1>
+        <p style={{ padding: "30px" }}>Category/{categoryName}</p>
+        <hr />
+        <div className={classes.products_container}>
+          {results?.map((product) => (
+            <ProductCard 
+            key={product.id} 
+            product={product} 
+            renderAdd={true} 
+            />
+          ))}
+        </div>
+      </section>
     </LayOut>
-  )
+  );
 }
 
 export default Results

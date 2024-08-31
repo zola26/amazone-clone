@@ -5,7 +5,7 @@ import classes from "./product.module.css";
 import Rating from "@mui/material/Rating";
 import { DataContext } from "../DataProvider/DataProvider";
 import { Type } from "../../Utility/action.type";
-function ProductCard({ product, ratingcorr, flex, renderDesc }) {
+function ProductCard({ product, ratingcorr, flex, renderDesc,renderAdd }) {
   const { image, title, id, rating, price, description } = product;
 
   const [state, dispatch] = useContext(DataContext);
@@ -49,10 +49,13 @@ function ProductCard({ product, ratingcorr, flex, renderDesc }) {
           {/* price */}
           <CurrencyFormat amount={price} />
         </div>
-        <button className={classes.button} onClick={addToCart}>
-          {" "}
-          add to cart
-        </button>
+
+        {renderAdd && (
+          <button className={classes.button} onClick={addToCart}>
+            {" "}
+            add to cart
+          </button>
+        )}
       </div>
     </div>
   );
